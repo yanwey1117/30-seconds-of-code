@@ -18,15 +18,13 @@ const isValidDate = (value, dateFormat) =>
 {
   dateFormat = dateFormat || 'dd/mm/yyyy';
  
-  var delimiter = /[^mdy]/.exec(dateFormat)[0];
- 
-  var theFormat = dateFormat.split(delimiter);
- 
-  var theDate = value.split(delimiter);
+  const delimiter = /[^mdy]/.exec(dateFormat)[0];
+  const theFormat = dateFormat.split(delimiter);
+  const theDate = value.split(delimiter);
  
   function isDate(date, format) {
     
-    var m, d, y, i = 0, len = format.length, f;
+    const m, d, y, i = 0, len = format.length, f;
     for (i; i < len; i++) {
       
       f = format[i];
