@@ -23,3 +23,5 @@ const isValidEmail = (email) =>
 isValidEmail('abc@gmail.com'); // true
 isValidEmail('kok90129mail'); // false
 ```
+
+
